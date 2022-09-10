@@ -1,6 +1,11 @@
+import Icon from "../../assets/img/notification-icon.svg"
+import "./style.css"
+
 function NotificationButton() {
     return (
-      <p>Meu Componente</p>
+        <div className="dsmeta-red-btn">
+            <img src={Icon} alt="Notificar" />
+        </div>
     )
   }
   
