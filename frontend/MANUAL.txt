@@ -30,3 +30,7 @@ Copiar
 	<version>3.1.0</version><!--$NO-MVN-MAN-VER$ -->
 </plugin>
 no plugins no pom depois vai em maeve force update
+
+
+
+cross origin
