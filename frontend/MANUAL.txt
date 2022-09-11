@@ -34,3 +34,33 @@ no plugins no pom depois vai em maeve force update
 
 
 cross origin
+
+
+Passo: Deploy no Netlify
+Antes: acrescente window.React = React no seu main.tsx conforme abaixo, e salve um novo commit:
+
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './index.css'
+
+window.React = React
+
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
+https://www.netlify.com/
+
+Deploy básico
+
+Base directory: frontend
+Build command: yarn build
+Publish directory: frontend/dist
+Variáveis de ambiente:
+VITE_BACKEND_URL
+Configurações adicionais
+
+Site settings -> Domain Management: (colocar o nome que você quiser)
+Deploys -> Trigger deploy
